@@ -1,0 +1,55 @@
+.body1{
+	font-size : 40px;
+	position: fixed;
+	top: 30px;
+	left: 40px;
+	width : 1275px;
+	height : 60px;
+	background-color : #232f3e;
+}
+.body2{
+	font-size : 40px;
+	position: fixed;
+	top: 30px;
+	left: 180px;
+}
+.body3{
+	font-size : 40px;
+	position: fixed;
+	top: 30px;
+	left: 350px;
+}
+.body4{
+	font-size : 40px;
+	position: fixed;
+	top: 30px;
+	left: 490px;
+}
+.body5{
+	font-size : 40px;
+	position: fixed;
+	top: 30px;
+	left: 640px;	
+}
+.body6{
+	position: fixed;
+	top: 150px;
+	left: 100px;	
+}
+.main{
+	position : relative;
+	top: 400px;
+}
+.footer{
+	position : fixed;
+	bottom : 0px;
+	left: 0px;
+	width : 2000px;
+	height : 66px;
+	background-color : black;	
+}
+.forum{
+	position : fixed;
+	top : 100px;
+	right : 50px;
+}

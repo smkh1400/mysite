@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>
+			Welcome to my site
+		</title>
+		<link href="style.CSS" rel="stylesheet" type="text/CSS"/>
+		<style>
+		body {
+			background-image: url('4613.jpg');
+			background-size: cover;
+		}
+		</style>
+		<script>
+			function check() {
+  				var x = document.getElementById("box");
+  				if (x.style.display === "none") {
+    					x.style.display = "block";
+  				}else{
+					x.style.display = "none";
+				}
+				var y = document.getElementById("message");
+				if (y.style.display === "block") {
+    					y.style.display = "none";
+  				}
+			}
+			function submit(){
+				var fn = document.getElementById("fname");
+				var ln = document.getElementById("lname");
+				var em = document.getElementById("email");
+				var tx = document.getElementById("text");
+				var y = document.getElementById("message");
+				var x = document.getElementById("box");
+  				if (x.style.display === "none") {
+    					x.style.display = "block";
+  				}else{
+					x.style.display = "none";
+				}
+				if (y.style.display === "none") {
+    					y.style.display = "block";
+  				}
+			}
+		</script>
+	</head>
+	<body bgcolor="#f2bc94">
+		<div class="body1">
+			<a href="http://localhost/homepage.html" style="text-decoration: none;">
+				<font face="Titillium" size="4" color="white"><b>&nbsp;&nbsp;Home</b></font>
+			</a>
+		</div>
+		<div class="body2">
+			<a href="http://localhost/biography.html" style="text-decoration: none;">
+				<font face="Titillium" size="4" color="white"><b>Biography</b></font>
+			</a>
+		</div>
+		<div class="body3">
+			<a href="http://localhost/skills.html" style="text-decoration: none;">
+				<font face="Titillium" size="4" color="white"><b>Skills</b></font>
+			</a>
+		</div>
+		<div class="body4">
+			<a href="http://localhost/honors.html" style="text-decoration: none;">
+				<font face="Titillium" size="4" color="white"><b>Honors</b></font>
+			</a>
+		</div>
+		<div class="body5">
+			<a href="http://localhost/contactus.html" style="text-decoration: none;">
+				<font face="Titillium" size="4" color="orange"><b>Contact Us</b></font>
+			</a>
+		</div>
+		<div class="footer">
+			<font size="5" color="white"><b>Contact Us:</b></font>
+			<ul><b><font color="white"> Email:mz2012kh82@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp <a href="https://github.com/smkh1400" style="text-decoration: none;"></font><font color="white">github.com/smkh1400</font></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp <a href="https://stackoverflow.com/users/17514958/mohammadreza-khosravian" style="text-decoration: none;"><font color="white">stackoverflow.com/users/17514958/mohammadreza-khosravian</a></font> </b> </ul>
+		</div>
+		<div style="position : fixed; top : 100px; left : 100px">
+			<label for="fname"><font color="white">First name:</font></label><br>
+  			<input type="text" id="fname"><br>
+  			<label for="lname"><font color="white">Last name:</font></label><br>
+  			<input type="text" id="lname"><br>
+			<label for="email"><font color="white">Email:</font></label><br>
+  			<input type="text" id="email"><br><br>
+			<label for="text"><font color="white">Text:</font></label><br>
+  			<input type="text" id="text" style=" height : 100px; width : 500px;"><br><br>
+			<input type="submit" id="submit" onclick="check()">
+		</div>
+		<div style="display : none; position : fixed; top : 400px; left : 100px" id="box">
+			Are you sure?<br><br>
+			<input type="submit" value="Yes" onclick="submit()">&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="No" onclick="check()">
+		</div>
+		<div style="display :none ; position : fixed; top : 450px; left : 100px" id="message">
+			<font color="green"><b>"Your text was sent successfully!</b></font>
+		</div>
+		<div style="position : fixed; top : 200px; left : 600px" id="result">
+			
+		</div>
+	</body>
+
+
+</html>
